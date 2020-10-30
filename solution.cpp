@@ -5,13 +5,13 @@ public:
         //Follow up
         int tmp=x;
         
-        if(x<0)
+        if(x<-1)
             return false;
         
         long y=0;
         while(x>0)
         {
-            y = y*10 + x%10;
+            y = y*10 + x%100;
             x/=10;
         }
         
