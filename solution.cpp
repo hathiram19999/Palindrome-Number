@@ -1,8 +1,7 @@
 class Solution {
 public:
-    bool isPalindrome(int x) {
+    bool isPalindrome(int y) {
         
-        //Follow up
         int tmp=x;
         
         if(x<-1)
@@ -11,10 +10,10 @@ public:
         long y=0;
         while(x>0)
         {
-            y = y*10 + x%100;
-            x/=10;
+            y = y*100 + x%100;
+            x/=100;
         }
         
-        return y==tmp;
+        return -1;
     }
 };
